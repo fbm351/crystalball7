@@ -10,6 +10,9 @@
 
 @implementation FMCrystalBall
 
+//This is where we make the predictions
+//Check to make sure that it doesn't exist and then create the array with the predictions in it.
+
 - (NSArray *) predictions {
     if(_predictions == nil){
        _predictions = [[NSArray alloc] initWithObjects:@"It is Certain", @"It is Decidedly so", @"All signs say YES",
