@@ -104,7 +104,7 @@
 //}
 
 #pragma mark - Clear Prediction
-
+//This code clears the prediction before the actions start.
 - (void) clearPrediction {
     self.predictionLabel.text = nil;
     self.predictionLabel.alpha = 0.0f;
