@@ -21,6 +21,9 @@
 		D384B426180D884800641312 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D384B408180D884800641312 /* UIKit.framework */; };
 		D384B42E180D884800641312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D384B42C180D884800641312 /* InfoPlist.strings */; };
 		D384B430180D884800641312 /* CrystalBall7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D384B42F180D884800641312 /* CrystalBall7Tests.m */; };
+		D384B43B181003D400641312 /* FMCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = D384B43A181003D400641312 /* FMCrystalBall.m */; };
+		D384B43D18106CA400641312 /* crystal_ball 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D384B43C18106CA400641312 /* crystal_ball 2.mp3 */; };
+		D384B43F18106D3000641312 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D384B43E18106D3000641312 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		D384B42B180D884800641312 /* CrystalBall7Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBall7Tests-Info.plist"; sourceTree = "<group>"; };
 		D384B42D180D884800641312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D384B42F180D884800641312 /* CrystalBall7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBall7Tests.m; sourceTree = "<group>"; };
+		D384B439181003D300641312 /* FMCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCrystalBall.h; sourceTree = "<group>"; };
+		D384B43A181003D400641312 /* FMCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCrystalBall.m; sourceTree = "<group>"; };
+		D384B43C18106CA400641312 /* crystal_ball 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "crystal_ball 2.mp3"; sourceTree = "<group>"; };
+		D384B43E18106D3000641312 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D384B43F18106D3000641312 /* AudioToolbox.framework in Frameworks */,
 				D384B407180D884800641312 /* CoreGraphics.framework in Frameworks */,
 				D384B409180D884800641312 /* UIKit.framework in Frameworks */,
 				D384B405180D884800641312 /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		D384B403180D884800641312 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D384B43E18106D3000641312 /* AudioToolbox.framework */,
 				D384B404180D884800641312 /* Foundation.framework */,
 				D384B406180D884800641312 /* CoreGraphics.framework */,
 				D384B408180D884800641312 /* UIKit.framework */,
@@ -112,13 +121,14 @@
 		D384B40A180D884800641312 /* CrystalBall7 */ = {
 			isa = PBXGroup;
 			children = (
-				D384B413180D884800641312 /* FMAppDelegate.h */,
-				D384B414180D884800641312 /* FMAppDelegate.m */,
 				D384B416180D884800641312 /* Main.storyboard */,
 				D384B419180D884800641312 /* FMViewController.h */,
 				D384B41A180D884800641312 /* FMViewController.m */,
 				D384B41C180D884800641312 /* Images.xcassets */,
+				D384B43C18106CA400641312 /* crystal_ball 2.mp3 */,
 				D384B40B180D884800641312 /* Supporting Files */,
+				D384B439181003D300641312 /* FMCrystalBall.h */,
+				D384B43A181003D400641312 /* FMCrystalBall.m */,
 			);
 			path = CrystalBall7;
 			sourceTree = "<group>";
@@ -126,6 +136,8 @@
 		D384B40B180D884800641312 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D384B413180D884800641312 /* FMAppDelegate.h */,
+				D384B414180D884800641312 /* FMAppDelegate.m */,
 				D384B40C180D884800641312 /* CrystalBall7-Info.plist */,
 				D384B40D180D884800641312 /* InfoPlist.strings */,
 				D384B410180D884800641312 /* main.m */,
@@ -200,6 +212,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Fredrick Myers";
 				TargetAttributes = {
+					D384B400180D884800641312 = {
+						DevelopmentTeam = A4V952P94H;
+					};
 					D384B421180D884800641312 = {
 						TestTargetID = D384B400180D884800641312;
 					};
@@ -231,6 +246,7 @@
 			files = (
 				D384B41D180D884800641312 /* Images.xcassets in Resources */,
 				D384B40F180D884800641312 /* InfoPlist.strings in Resources */,
+				D384B43D18106CA400641312 /* crystal_ball 2.mp3 in Resources */,
 				D384B418180D884800641312 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +268,7 @@
 			files = (
 				D384B411180D884800641312 /* main.m in Sources */,
 				D384B415180D884800641312 /* FMAppDelegate.m in Sources */,
+				D384B43B181003D400641312 /* FMCrystalBall.m in Sources */,
 				D384B41B180D884800641312 /* FMViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,10 +396,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall7/CrystalBall7-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall7/CrystalBall7-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +412,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall7/CrystalBall7-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall7/CrystalBall7-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
